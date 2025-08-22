@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+}
+html, body, .main{
+      height: 100%;
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+}
+html{
+      font-size: 16px;
+}
+body{
+      background-color: hsl(235, 18%, 26%);
+}
+.main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+.article{
+      height: 70%;
+      width: 51%;
+      border-radius: 25px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      place-items: center;  
+      background-color: white;  
+      
+}
+
+.left, .right{
+      height: 94%;
+      width: 92%;
+}
+.right{
+      overflow: hidden;
+      border-radius: 10px;
+}
+
+img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      
+}
+.left{
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      width: 85%;
+}
+.left h1{
+      font-size: 2.8rem;
+      padding-bottom: 0.5em;
+      margin: 0;
+}
+.para{
+      padding-bottom: 1em;
+}
+ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+     
+}
+li{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+}
+li p{
+      margin: 0.4em;
+}
+li img{
+      height: 17px;
+      width: 17px;
+}
+form{
+      margin-top: 1em;
+      position: relative;
+}
+label{
+      font-size: 0.8rem;
+      font-weight: 500;
+}
+.invalid{
+      position: absolute;
+      top: 5px;        
+  right: 0;
+  color: #ff5a5a;
+  font-size: 0.8rem;
+  margin-right: 18px;
+  display: none;
+}
+input{
+      margin-top: 0.6em;
+      padding-top: 1em;
+      padding-left: 1em;
+      font-size: 0.8rem;
+      padding-right: 14em;
+      padding-bottom: 1em;
+      border-radius: 5px;
+      border: 1px solid grey;
+      cursor: pointer;
+}
+button{
+      padding: 1em 5.5em;
+      background-color: black;
+      font-weight: 700;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+button:hover{
+      background-color: hsl(4, 100%, 67%);
+      box-shadow: 0px 0px 7px 1px hsl(4, 100%, 67%);
+}
+
+/* Thenk for subscirbing ui design start */
+.nafirst{
+      
+}
+.nasec{
+      display: none;
+}
+    
+.othercontainer{
+      height: 55%;
+      width: 25%;
+      background-color: white;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      border-radius: 15px;
+}
+.success{
+      height: 80%;
+      width: 85%;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-top: 60px;
+}
+.oticon{
+      height: 50px;
+      width: 50px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+}
+.oth1{
+      font-size: 2.2rem;
+      padding-bottom: 0.4em;
+}
+.otpara{
+      font-weight: 300;
+      font-size: 0.9rem;
+      padding-bottom: 1em;
+}
+#dismiss-btn{
+      padding-left: 7em;
+      padding-right: 7em;
+      
+}
+@media screen and (max-width: 480px) {
+      /* styles for devices smaller than 480px */
+      
+      body {
+        font-size: 14px;   /* smaller font */
+        background-color: white;
+        
+      }
+      .nasec{
+            display: none;
+      }
+      body, .main{
+            height: 100%;
+        width: 100%;
+      }
+      .article{
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 95%;
+            width: 100%;
+      }
+      
+      .right{
+            order: -1;
+            width: 100%;
+            border: none;
+            height: 100%;
+
+      }
+      .right img{
+            width: 100%;
+            border: none;
+            height: 100%;
+            overflow: none;
+      }
+      .left{
+            height: 100%;
+            margin-top: 1.1em;
+            width: 90%;
+      }
+      .left h1{
+            padding-bottom: 0.2em;
+      }
+      .para{
+            font-size: 1rem;
+            font-weight: 400;
+      }
+      li p{
+            font-size: 1rem;
+            font-weight: 300;
+      }
+      input{
+            padding-top: 1.2em;
+            padding-bottom: 1.2em;
+      }
+      button{
+            font-size: 0.8rem;
+            padding-top: 1.3em;
+            padding-bottom: 1.3em;
+      }
+      .othercontainer{
+            height: 100%;
+            width: 100%;
+      }
+      .success{
+            height: 88%;
+      }
+      .oticon{
+            margin-top: 5em;
+            margin-bottom: 2.5em;
+      }
+      #user-email{
+            font-weight: bold;
+      }
+      .otpara{
+            font-size: 1rem;
+            margin-top: 0.6em;
+            margin-bottom: 10em;
+      }
+      #dismiss-btn{
+            width: 100%;
+      }
+    }
+    
